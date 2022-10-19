@@ -12,7 +12,8 @@ podTemplate(label: label,
         ) {
     node(label) {
         stage('Run shell') {
-                sh 'echo $KUBECONFIG'
+                sh 'echo ${workspace}'
+                sh 'echo ${KUBECONFIG}'
                 sh 'apk update'
                 sh 'apk upgrade'
                 sh 'apk add curl'
