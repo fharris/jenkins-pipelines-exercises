@@ -12,6 +12,7 @@ podTemplate(label: label,
         ) {
     node(label) {
         stage('Run shell') {
+                sh './kubectl get pods'     
             container('alpine') {
                 sh 'echo "hello world"'
                 sh 'apk update'
