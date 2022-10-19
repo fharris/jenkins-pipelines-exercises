@@ -1,2 +1,2 @@
 # jenkins-pipelines-exercises
-Tests with jenkins pipelines 
+# Tests with jenkins pipelines and kubernetes operator
